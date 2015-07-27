@@ -1,0 +1,22 @@
+{
+  "name": "5.1-Github-profile",
+  "version": "0.0.0",
+  "authors": [
+    "Alia Borroho <aliaborroho@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "neat": "~1.7.2",
+    "reset-css": "~2.0.2011012602",
+    "font-awesome": "~4.3.0",
+    "handlebars": "~3.0.3"
+  }
+}
