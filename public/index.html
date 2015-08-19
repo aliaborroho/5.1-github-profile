@@ -4,10 +4,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.css">
+    <link rel="stylesheet" href="app.css">
 
     <title>5.1-github-profile</title>
 </head>
 <body>
 
+<div id="profile-target"></div>
+<ul id="repos-target"></ul>
+
+<template id="profile-template">
+    <img src="{{avatar_url}}">
+    <h2>{{name}}</h2>
+    <p>{{login}}</p>
+
+    <hr>
+    <p><span class="octicon octicon-location"></span> {{location}}</p>
+
+    <p><span class="octicon octicon-mail"></span> {{email}}</p>
+
+    <p><span class="octicon octicon-clock"></span>Joined on June 28, 2015</p>
+    <hr>
+
+</template>
+
+<template id="repos-template">
+    {{#each this as |repo|}}
+    <li>
+        {{repo.name}}
+    </li>
+    {{/each}}
+</template>
+
+<script src="handlebars/handlebars.js"></script>
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
