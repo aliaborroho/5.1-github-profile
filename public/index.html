@@ -16,16 +16,25 @@
 
 <template id="profile-template">
     <img src="{{avatar_url}}">
-    <h2>{{name}}</h2>
-    <p>{{login}}</p>
+    <h2 class= "name">{{name}}</h2>
+    <p class= "full-name">{{login}}</p>
 
-    <hr>
-    <p><span class="octicon octicon-location"></span> {{location}}</p>
+<hr>
+<p><span class="octicon octicon-location"></span> {{location}}</p>
+<p><span class="octicon octicon-mail"></span> {{email}}</p>
+<p><span class="octicon octicon-clock"></span>Joined on June 28, 2015</p>
 
-    <p><span class="octicon octicon-mail"></span> {{email}}</p>
+<hr>
+ <div>
+ <h3>Followers {{followers}}</h3>
+ <h3>Starred {{public_gists}}</h3>
+ <h3>Following {{following}}</h3>
+ </div>
+ <hr>
+ </template>
 
-    <p><span class="octicon octicon-clock"></span>Joined on June 28, 2015</p>
-    <hr>
+<div wrapper="left-content">
+
 
 </template>
 
@@ -36,6 +45,8 @@
     </li>
     {{/each}}
 </template>
+<div>
+
 
 <script src="handlebars/handlebars.js"></script>
 <script src="jquery/dist/jquery.min.js"></script>

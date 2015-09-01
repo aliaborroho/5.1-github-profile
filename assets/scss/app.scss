@@ -14,7 +14,34 @@ html {
   box-sizing: inherit;
 }
 //next do variables
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+  }
 
 
+.full-name{
+    font-size:medium;
+}
 
 //next do styling
+h2 {
+    font-size: 40px;
+    margin-top: 4px;
+    margin-bottom: 0;
+
+};
+img {
+    height: 230px;
+    width: 230px;
+};
+
+#repos-target {
+    color: #2F55E5;
+    display: block;
+    position: float;
+    text-decoration-color: #2F55E5
+}
+

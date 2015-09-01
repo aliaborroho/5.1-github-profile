@@ -9,6 +9,7 @@ var includePaths = [
   'assets/scss',
   'bower_components/reset-css',
   'bower_components/fontawesome/scss',
+  'bower_components/jquery',
   'bower_components/bourbon/app/assets/stylesheets',
   'bower_components/neat/app/assets/stylesheets'
 ];
